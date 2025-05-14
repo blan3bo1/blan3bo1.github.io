@@ -1,0 +1,74 @@
+{
+  "name": "PSV executor repo ",
+  "subtitle": "All ios roblox executors",
+  "description": "All of the roblox executors for iPhone",
+  "iconURL": "https://i.imgur.com/mkdurDu.png",
+  "website": "https://linktr.ee/Blankboii",
+  "patreonURL": "",
+  "tintColor": "#ff6900",
+  "featuredApps": [],
+  "headerURL": "https://i.imgur.com/3SJ8NRd.png",
+  "apps": [
+    {
+      "name": "Codex",
+      "bundleIdentifier": "com.roblox.robloxmobile.codex",
+      "marketplaceID": "",
+      "developerName": "Blankboii",
+      "subtitle": "Roblox executor",
+      "localizedDescription": "And amazing roblox executor ",
+      "iconURL": "https://i.imgur.com/eWwdeOR.jpeg",
+      "tintColor": "#2672d8",
+      "category": "games",
+      "screenshots": [
+        {
+          "imageURL": "https://i.imgur.com/oh6th0K.png",
+          "width": 1792,
+          "height": 828
+        },
+        {
+          "imageURL": "https://i.imgur.com/OfVnzCI.png",
+          "width": 1792,
+          "height": 828
+        },
+        {
+          "imageURL": "https://i.imgur.com/AV0Pjb8.png",
+          "width": 1792,
+          "height": 828
+        },
+        {
+          "imageURL": "https://i.imgur.com/gh5pWs9.png",
+          "width": 1792,
+          "height": 828
+        }
+      ],
+      "versions": [
+        {
+          "downloadURL": "https://www.mediafire.com/file/1tat10g7jysey8l/Codex_2.670.714.ipa/file",
+          "size": 154979532,
+          "version": "2.670.714",
+          "buildVersion": "",
+          "date": "2025-05-07T23:31:00-07:00",
+          "localizedDescription": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
+          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
+          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
+          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
+          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
+          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
+          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
+          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
+          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
+        }
+      },
+      "patreon": {}
+    }
+  ],
+  "news": []
+}
