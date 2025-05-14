@@ -1,164 +1,150 @@
 {
-  "name": "PSV executor repo ",
-  "subtitle": "All ios roblox executors",
-  "description": "All of the roblox executors for iPhone",
-  "iconURL": "https://i.imgur.com/mkdurDu.png",
-  "website": "https://linktr.ee/Blankboii",
-  "patreonURL": "",
-  "tintColor": "#ff6900",
-  "featuredApps": [],
-  "headerURL": "https://i.imgur.com/3SJ8NRd.png",
-  "apps": [
-    {
-      "name": "Krnl",
-      "bundleIdentifier": "com.krnl.client",
-      "marketplaceID": "",
-      "developerName": "Blankboii",
-      "subtitle": "Roblox executor ",
-      "localizedDescription": "Roblox executor ",
-      "iconURL": "https://i.imgur.com/Dch8OS0.jpeg",
-      "tintColor": "#345cfc",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
+    "name": "My Example Source",
+    "subtitle": "All my apps in one place.",
+    "description": "Welcome to my source! Here you'll find all of my apps.",
+    "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OctoSource.png",
+    "headerURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OceanHeader.png",
+    "website": "https://example.com",
+    "tintColor": "#4185A9",
+    "featuredApps": [
+        "com.example.myapp",
+        "com.example.anotherapp"
+    ],
+    "apps": [
         {
-          "downloadURL": "https://wrdcdn.net/r/54921/1746919863937/Krnl_release_670.ipa",
-          "size": 114829557,
-          "version": "2.670.714",
-          "buildVersion": "",
-          "date": "2025-05-14T04:17:00-07:00",
-          "localizedDescription": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    },
-    {
-      "name": "Delta",
-      "bundleIdentifier": "com.gloop.deltamobile",
-      "marketplaceID": "",
-      "developerName": "Blankboii",
-      "subtitle": "Executor ",
-      "localizedDescription": "Executor ",
-      "iconURL": "https://i.imgur.com/NdzxtHA.jpeg",
-      "tintColor": "#3454fc",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "downloadURL": "https://www.mediafire.com/file/4im728a597lvgo4/Delta_2.670.714_1746600471.ipa/file?dkey=keltwylmwyk&r=695",
-          "size": 165622579,
-          "version": "2.670.714",
-          "buildVersion": "",
-          "date": "2025-05-14T04:15:00-07:00",
-          "localizedDescription": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    },
-    {
-      "name": "Codex",
-      "bundleIdentifier": "com.roblox.robloxmobile.codex",
-      "marketplaceID": "",
-      "developerName": "Blankboii",
-      "subtitle": "Roblox executor",
-      "localizedDescription": "And amazing roblox executor ",
-      "iconURL": "https://i.imgur.com/eWwdeOR.jpeg",
-      "tintColor": "#2672d8",
-      "category": "games",
-      "screenshots": [
-        {
-          "imageURL": "https://i.imgur.com/oh6th0K.png",
-          "width": 1792,
-          "height": 828
+            "name": "My Example App",
+            "bundleIdentifier": "com.example.myapp",
+            "developerName": "Example Developer",
+            "subtitle": "An awesome app.",
+            "localizedDescription": "This is an awesome app only available on AltStore.",
+            "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/FishApp.png",
+            "tintColor": "#5CA399",
+            "screenshots": [
+                "https://example.com/myapp_portrait_screenshot1.png",
+                "https://example.com/myapp_portrait_screenshot2.png",
+                {
+                    "imageURL": "https://example.com/myapp_landscape_screenshot.png",
+                    "width": 2556,
+                    "height": 1179
+                }
+            ],
+            "versions": [
+                {
+                    "version": "1.1",
+                    "date": "2022-05-01T09:00:00-08:00",
+                    "size": 20000000,
+                    "downloadURL": "https://example.com/myapp_v1.1.ipa",
+                    "localizedDescription": "New features and bug fixes.",
+                    "minOSVersion": "12.0"
+                },
+                {
+                    "version": "1.0",
+                    "date": "2022-03-16T07:00:00-08:00",
+                    "size": 10000000,
+                    "downloadURL": "https://example.com/myapp_v1.0.ipa",
+                    "localizedDescription": "Initial release."
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.security.application-groups",
+                    "com.apple.developer.siri"
+                ],
+                "privacy": {
+                    "NSPhotoLibraryUsageDescription": "App saves photos to your Photo Library.",
+                    "NSCameraUsageDescription": "App uses camera to take photos.",
+                    "NSMicrophoneUsageDescription": "App uses microphone to record video."
+                }
+            }
         },
         {
-          "imageURL": "https://i.imgur.com/OfVnzCI.png",
-          "width": 1792,
-          "height": 828
+            "name": "Another Example App",
+            "bundleIdentifier": "com.example.anotherapp",
+            "developerName": "Example Developer",
+            "subtitle": "Another awesome app.",
+            "localizedDescription": "This is another awesome app only available on AltStore.",
+            "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/SharkApp.png",
+            "tintColor": "#3660A2",
+            "screenshots": {
+                "iphone": [
+                    "https://example.com/anotherapp_portrait_1.png",
+                    "https://example.com/anotherapp_portrait_2.png",
+                    {
+                        "imageURL": "https://example.com/anotherapp_landscape.png",
+                        "width": 2556,
+                        "height": 1179
+                    }
+                ],
+                "ipad": [
+                    {
+                        "imageURL": "https://example.com/anotherapp_ipad_portrait.png",
+                        "width": 1668,
+                        "height": 2388
+                    },
+                    {
+                        "imageURL": "https://example.com/anotherapp_ipad_landscape.png",
+                        "width": 2388,
+                        "height": 1668
+                    }
+                ]
+            },
+            "versions": [
+                {
+                    "version": "1.2",
+                    "date": "2022-06-21T09:00:00-08:00",
+                    "downloadURL": "https://example.com/anotherapp_v1.2.ipa",
+                    "localizedDescription": "Bug fixes and performance improvements.",
+                    "size": 81514,
+                    "minOSVersion": "13.0"
+                },
+                {
+                    "version": "1.1",
+                    "date": "2022-04-15T10:00:00-08:00",
+                    "downloadURL": "https://example.com/anotherapp_v1.1.ipa",
+                    "localizedDescription": "New features!",
+                    "size": 81364,
+                    "minOSVersion": "13.0",
+                    "maxOSVersion": "16.3"
+                },
+                {
+                    "version": "1.0",
+                    "date": "2022-02-02T07:00:00-08:00",
+                    "downloadURL": "https://example.com/anotherapp_v1.0.ipa",
+                    "localizedDescription": "Initial release.",
+                    "size": 79821
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.developer.healthkit",
+                    "com.apple.developer.game-center"
+                ],
+                "privacy": {
+                    "NSLocalNetworkUsageDescription": "App scans the local network for nearby computers."
+                }
+            }
+        }
+    ],
+    "news": [
+        {
+            "title": "New Feature Announcement",
+            "identifier": "new_feature",
+            "caption": "Introducing a new feature in AltStore!",
+            "date": "2023-03-15",
+            "tintColor": "#5CA399",
+            "imageURL": "https://example.com/new_feature_image.png",
+            "notify": true,
+            "url": "https://example.com/new_feature_details"
         },
         {
-          "imageURL": "https://i.imgur.com/AV0Pjb8.png",
-          "width": 1792,
-          "height": 828
-        },
-        {
-          "imageURL": "https://i.imgur.com/gh5pWs9.png",
-          "width": 1792,
-          "height": 828
+            "title": "App Update Available",
+            "identifier": "app_update",
+            "caption": "An update is available for My Example App.",
+            "date": "2023-03-10T10:00:00-07:00",
+            "tintColor": "#3660A2",
+            "imageURL": "https://example.com/app_update_image.png",
+            "notify": false,
+            "appID": "com.example.myapp"
         }
-      ],
-      "versions": [
-        {
-          "version": "2.670.714",
-          "date": "2025-05-07T23:31:00-07:00",
-          "localizedDescription": null,
-          "downloadURL": "https://www.mediafire.com/file/1tat10g7jysey8l/Codex_2.670.714.ipa/file",
-          "size": 154979532,
-          "buildVersion": "",
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    }
-  ],
-  "news": [
-    {
-      "title": "New Feature Announcement",
-      "identifier": "news_odbydmxgyl",
-      "caption": "Introducing a new feature in AltStore!",
-      "date": "2025-05-13T21:13",
-      "tintColor": "#ff6900",
-      "imageURL": "",
-      "notify": true,
-      "url": "https://example.com/new_feature_details",
-      "appID": null
-    }
-  ]
+    ]
 }
