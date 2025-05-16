@@ -18,16 +18,16 @@
       "localizedDescription": "Roblox executor ",
       "iconURL": "https://i.imgur.com/Dch8OS0.jpeg",
       "tintColor": "#345cfc",
-      "category": "other",
+      "category": "games",
       "screenshots": [],
       "versions": [
         {
           "downloadURL": "https://wrdcdn.net/r/54921/1746919863937/Krnl_release_670.ipa",
           "size": 114829557,
           "version": "2.670.714",
-          "buildVersion": "",
+          "buildVersion": "2.670.714",
           "date": "2025-05-14T04:17:00-07:00",
-          "localizedDescription": null,
+          "localizedDescription": wsg,
           "minOSVersion": null,
           "maxOSVersion": null
         }
@@ -64,9 +64,9 @@
           "downloadURL": "https://www.mediafire.com/file/4im728a597lvgo4/Delta_2.670.714_1746600471.ipa/file?dkey=keltwylmwyk&r=695",
           "size": 165622579,
           "version": "2.670.714",
-          "buildVersion": "",
+          "buildVersion": "2.670.714",
           "date": "2025-05-14T04:15:00-07:00",
-          "localizedDescription": null,
+          "localizedDescription": wsg ,
           "minOSVersion": null,
           "maxOSVersion": null
         }
@@ -123,10 +123,10 @@
         {
           "version": "2.670.714",
           "date": "2025-05-07T23:31:00-07:00",
-          "localizedDescription": null,
+          "localizedDescription": wsg ,
           "downloadURL": "https://www.mediafire.com/file/1tat10g7jysey8l/Codex_2.670.714.ipa/file",
           "size": 154979532,
-          "buildVersion": "",
+          "buildVersion": "2.670.714",
           "minOSVersion": null,
           "maxOSVersion": null
         }
