@@ -61,7 +61,7 @@
       "screenshots": [],
       "versions": [
         {
-          "downloadURL": "https://www.mediafire.com/file/4im728a597lvgo4/Delta_2.670.714_1746600471.ipa/file?dkey=keltwylmwyk&r=695",
+          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5b3ba4e0-1582-41de-b5e7-8c182bcc937e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T013631Z&X-Amz-Expires=300&X-Amz-Signature=976f33711564da0ae965b328075fe26b5ac805ff91b5a31d3b0c2532b0ce979e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DCodex_2.670.714.ipa&response-content-type=application%2Foctet-stream",
           "size": 165622579,
           "version": "2.670.714",
           "buildVersion": "2.670.714",
