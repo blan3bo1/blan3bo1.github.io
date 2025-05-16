@@ -22,7 +22,7 @@
       "screenshots": [],
       "versions": [
         {
-          "downloadURL": "https://wrdcdn.net/r/54921/1746919863937/Krnl_release_670.ipa",
+          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/463fc91b-79cc-4396-bf01-955fa1b3b689?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T012912Z&X-Amz-Expires=300&X-Amz-Signature=646cf7dd4f8ea2b7548d9a27376c0b2cfc5007213a0119578073957a761b9971&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DKrnl_release_670.ipa&response-content-type=application%2Foctet-stream",
           "size": 114829557,
           "version": "2.670.714",
           "buildVersion": "2.670.714",
