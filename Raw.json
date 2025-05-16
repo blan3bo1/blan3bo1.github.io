@@ -10,7 +10,7 @@
   "headerURL": "https://i.imgur.com/nhHq9ly.png",
   "apps": [
     {
-      "name": "Roblox",
+      "name": "Delta",
       "bundleIdentifier": "com.gloop.deltamobile",
       "marketplaceID": "",
       "developerName": "PSV",
@@ -48,7 +48,7 @@
       "patreon": {}
     },
     {
-      "name": "Roblox",
+      "name": "Krnl",
       "bundleIdentifier": "com.krnl.client",
       "marketplaceID": "",
       "developerName": "PSV",
@@ -86,13 +86,13 @@
       "patreon": {}
     },
     {
-      "name": "Roblox",
+      "name": "Codex",
       "bundleIdentifier": "com.roblox.robloxmobile.codex",
       "marketplaceID": "",
       "developerName": "PSV",
       "subtitle": "",
       "localizedDescription": "",
-      "iconURL": "https://i.imgur.com/L7DaSJ8.png",
+      "iconURL": "https://i.imgur.com/fwtkINg.png",
       "tintColor": "#6b7f93",
       "category": "other",
       "screenshots": [],
