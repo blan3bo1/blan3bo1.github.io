@@ -1,10 +1,10 @@
 {
-    "name": "My Example Source",
-    "subtitle": "All my apps in one place.",
-    "description": "Welcome to my source! Here you'll find all of my apps.",
-    "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OctoSource.png",
-    "headerURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OceanHeader.png",
-    "website": "https://example.com",
+    "name": "PSV executor hub",
+    "subtitle": "All roblox executors in one source.",
+    "description": "Welcome to my source! Here you'll find all of the currently available roblox executors.",
+    "iconURL": "https://i.imgur.com/mkdurDu.png",
+    "headerURL": "https://linktr.ee/Blankboii",
+    "website": "https://linktr.ee/Blankboii",
     "tintColor": "#4185A9",
     "featuredApps": [
         "com.example.myapp",
