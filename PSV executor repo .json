@@ -61,7 +61,7 @@
       "screenshots": [],
       "versions": [
         {
-          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5f477570-e4fd-4017-9e7a-dd49d9f72804?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T014212Z&X-Amz-Expires=300&X-Amz-Signature=15316912231fc32dc933cdd7e063b7ce792743f7a230e49619f57c3ec9b23c7c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DDelta_2.670.714_1746600471.ipa&response-content-type=application%2Foctet-stream",
+          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5f477570-e4fd-4017-9e7a-dd49d9f72804?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T014933Z&X-Amz-Expires=300&X-Amz-Signature=4ee16f1dd610ed0330f67df9c8cd4fa0d2fffd2118f46e4b5f51da7549dad875&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DDelta_2.670.714_1746600471.ipa&response-content-type=application%2Foctet-stream",
           "size": 165622579,
           "version": "2.670.714",
           "buildVersion": "2.670.714",
