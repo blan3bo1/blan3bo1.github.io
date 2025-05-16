@@ -61,7 +61,7 @@
       "screenshots": [],
       "versions": [
         {
-          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5b3ba4e0-1582-41de-b5e7-8c182bcc937e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T013631Z&X-Amz-Expires=300&X-Amz-Signature=976f33711564da0ae965b328075fe26b5ac805ff91b5a31d3b0c2532b0ce979e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DCodex_2.670.714.ipa&response-content-type=application%2Foctet-stream",
+          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5f477570-e4fd-4017-9e7a-dd49d9f72804?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T014212Z&X-Amz-Expires=300&X-Amz-Signature=15316912231fc32dc933cdd7e063b7ce792743f7a230e49619f57c3ec9b23c7c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DDelta_2.670.714_1746600471.ipa&response-content-type=application%2Foctet-stream",
           "size": 165622579,
           "version": "2.670.714",
           "buildVersion": "2.670.714",
@@ -124,7 +124,7 @@
           "version": "2.670.714",
           "date": "2025-05-07T23:31:00-07:00",
           "localizedDescription": null,
-          "downloadURL": "https://www.mediafire.com/file/1tat10g7jysey8l/Codex_2.670.714.ipa/file",
+          "downloadURL": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/971255057/5b3ba4e0-1582-41de-b5e7-8c182bcc937e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250516T014811Z&X-Amz-Expires=300&X-Amz-Signature=ccfbf408e6535bede79cae8385b2d1f913b8c362038c5be370e993c6e21a02a3&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DCodex_2.670.714.ipa&response-content-type=application%2Foctet-stream",
           "size": 154979532,
           "buildVersion": "2.670.714",
           "minOSVersion": null,
