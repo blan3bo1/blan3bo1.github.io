@@ -27,7 +27,7 @@
           "version": "2.670.714",
           "buildVersion": "2.670.714",
           "date": "2025-05-14T04:17:00-07:00",
-          "localizedDescription": wsg,
+          "localizedDescription": null,
           "minOSVersion": null,
           "maxOSVersion": null
         }
@@ -66,7 +66,7 @@
           "version": "2.670.714",
           "buildVersion": "2.670.714",
           "date": "2025-05-14T04:15:00-07:00",
-          "localizedDescription": wsg ,
+          "localizedDescription": null,
           "minOSVersion": null,
           "maxOSVersion": null
         }
@@ -123,7 +123,7 @@
         {
           "version": "2.670.714",
           "date": "2025-05-07T23:31:00-07:00",
-          "localizedDescription": wsg ,
+          "localizedDescription": null,
           "downloadURL": "https://www.mediafire.com/file/1tat10g7jysey8l/Codex_2.670.714.ipa/file",
           "size": 154979532,
           "buildVersion": "2.670.714",
