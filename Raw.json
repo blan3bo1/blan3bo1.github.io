@@ -1,128 +1,19 @@
 {
-  "name": "PSV executor hub",
-  "subtitle": " ",
-  "description": " ",
-  "iconURL": "https://i.imgur.com/4T8681U.jpeg",
-  "website": "https://discord.com/invite/ETFYuH5qzk",
-  "patreonURL": "https://discord.com/invite/ETFYuH5qzk",
-  "tintColor": "#6156e2",
-  "featuredApps": [],
-  "headerURL": "https://i.imgur.com/nhHq9ly.png",
-  "apps": [
-    {
-      "name": "Delta",
-      "bundleIdentifier": "com.gloop.deltamobile",
-      "marketplaceID": "",
-      "developerName": "PSV",
-      "subtitle": "",
-      "localizedDescription": "",
-      "iconURL": "https://i.imgur.com/HG7jNlw.png",
-      "tintColor": "#3454fc",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
+    "name": "test",
+    "identifier": "com.blankboii.psv",
+    "apps": [
         {
-          "downloadURL": "https://github.com/blan3bo1/Codex/releases/download/ipaaa/DeltaScriptHubV3Spoofed.2.673.712.ipa",
-          "size": 165600000,
-          "version": "2.673.712",
-          "buildVersion": "1",
-          "date": "2025-05-16T18:06:00+14:00",
-          "localizedDescription": null,
-          "minOSVersion": null
+            "bundleIdentifier": "eu.pokemmo.client",
+            "developerName": "blankboii test",
+            "downloadURL": "https://github.com/blan3bo1/Codex/releases/download/delta/Delta-2.675.715.ipa",
+            "iconURL": "https://cdn.discordapp.com/attachments/1355843783715197031/1385943075792355428/IMG_0357.png?ex=6857e792&is=68569612&hm=f70a25deb80d67a25bed37093f47eabb825401b47a1df68a501a5e197becf168&",
+            "localizedDescription": "PokeMMO is a free to play mmorpg, come join a growing community as you level up and discover new monsters. Available now on PC, Android, iOS, Mac, and Linux.",
+            "name": "test1",
+            "screenshotURLs":[],
+            "size": 110954224,
+            "tintColor": "73ACE2",
+            "version": "1.213",
+            "versionDate": "2025-02-08T04:01:52+00:00"
         }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    },
-    {
-      "name": "Krnl",
-      "bundleIdentifier": "com.krnl.client",
-      "marketplaceID": "",
-      "developerName": "PSV",
-      "subtitle": "",
-      "localizedDescription": "",
-      "iconURL": "https://i.imgur.com/fwtkINg.png",
-      "tintColor": "#345cfc",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
-        {
-          "downloadURL": "https://github.com/blan3bo1/Codex/releases/download/ipa/KrnlScriptHubV3Spoofed.2.673.712.ipa",
-          "size": 114800000,
-          "version": "2.673.712",
-          "buildVersion": "1",
-          "date": "2025-05-16T18:06:00+14:00",
-          "localizedDescription": null,
-          "minOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    },
-    {
-      "name": "Codex",
-      "bundleIdentifier": "com.roblox.robloxmobile.codex",
-      "marketplaceID": "",
-      "developerName": "PSV",
-      "subtitle": "",
-      "localizedDescription": "",
-      "iconURL": "https://i.imgur.com/fwtkINg.png",
-      "tintColor": "#6b7f93",
-      "category": "other",
-      "screenshots": [],
-      "versions": [
-        {
-          "downloadURL": "https://github.com/blan3bo1/Codex/releases/download/ipaa/CodexScriptHubV3Spoofed.V2.673.712.ipa",
-          "size": 147800000,
-          "version": "2.673.712",
-          "buildVersion": "1",
-          "date": "2025-05-16T18:07:00+14:00",
-          "localizedDescription": null,
-          "minOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/",
-          "NSCameraUsageDescription": "Roblox uses your camera to animate your avatar with your movement and scan QR codes.",
-          "NSContactsUsageDescription": "Connect with friends on Roblox. Your contacts will be regularly synced and matches with other Roblox users will be stored to help you find friends. You can manage this any time in settings.",
-          "NSHumanReadableCopyright": "2014 ROBLOX Inc.",
-          "NSLocalNetworkUsageDescription": "Roblox needs access to local networks to connect to players around you.",
-          "NSMicrophoneUsageDescription": "Roblox needs access to your microphone for voice chat.",
-          "NSMotionUsageDescription": "Roblox needs access to the accelerometer to enhance your play experience.",
-          "NSPhotoLibraryAddUsageDescription": "Allow Roblox to access your photo library so you can save images and videos to your device's camera roll.",
-          "NSPhotoLibraryUsageDescription": "Roblox needs access to your photos to enhance your play experience."
-        }
-      },
-      "patreon": {}
-    }
-  ],
-  "news": []
+    ]
 }
