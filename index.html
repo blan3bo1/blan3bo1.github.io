@@ -1,10 +1,761 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Awesome Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouFlex - Modified YouTube for iOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        }
+
+        :root {
+            --primary: #FF0000;
+            --primary-dark: #CC0000;
+            --dark: #0F0F0F;
+            --darker: #030303;
+            --light: #FFFFFF;
+            --gray: #AAAAAA;
+            --card-bg: #1A1A1A;
+            --border: #303030;
+        }
+
+        body {
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--dark);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+
+        .logo span {
+            color: var(--light);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fff, #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .version {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--gray);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border);
+        }
+
+        .download-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .download-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .compatibility {
+            color: var(--gray);
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 70px 0;
+            background: var(--dark);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            font-size: 20px;
+            color: var(--primary);
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* Installation Section */
+        .installation {
+            padding: 70px 0;
+            background: var(--darker);
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .step-content p {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .step-image {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-top: 10px;
+        }
+
+        .warning-box {
+            background: rgba(255, 165, 0, 0.1);
+            border: 1px solid rgba(255, 165, 0, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .warning-box h4 {
+            color: #FFA500;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warning-box p {
+            color: #FFA500;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 70px 0;
+            background: var(--dark);
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .faq-answer.active {
+            padding: 0 20px 20px;
+            max-height: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--darker);
+            padding: 40px 0 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://i.imgur.com/RVmKYjl.png" alt="YouFlex">
+                    <span>YouFlex</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="app-icon">
+                <img src="https://i.imgur.com/RVmKYjl.png" alt="YouFlex Icon">
+            </div>
+            <h1>YouFlex for iOS</h1>
+            <p>The ultimate modified YouTube experience with 20+ powerful tweaks and enhancements</p>
+            <div class="version">Version 2.5.1 • Updated: December 2023</div>
+            <button class="download-btn">
+                <i class="fas fa-download"></i>
+                Download IPA
+            </button>
+            <div class="compatibility">Compatible with iOS 14.0 - 17.2</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Enhanced Features</h2>
+                <p>YouFlex combines the best YouTube tweaks into one powerful package</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>No Ads</h3>
+                    <p>Remove all video ads, banner ads, and sponsored content from your YouTube experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Background Play</h3>
+                    <p>Listen to YouTube videos with your screen off or while using other apps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Video Downloads</h3>
+                    <p>Download videos directly to your device for offline viewing anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-down"></i>
+                    </div>
+                    <h3>Return YouTube Dislikes</h3>
+                    <p>Bring back the dislike count on videos using ReturnYouTubeDislikes API.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>YTABConfig</h3>
+                    <p>Advanced configuration options for ad-blocking and YouTube behavior.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Hold for Speed</h3>
+                    <p>Hold anywhere on the screen to temporarily change playback speed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compress"></i>
+                    </div>
+                    <h3>YTLite Optimizations</h3>
+                    <p>Performance improvements and interface optimizations from YTLite.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Video Overlay</h3>
+                    <p>Customizable video player overlay with additional controls and information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>YouLoop</h3>
+                    <p>Advanced loop controls for videos and playlists with custom loop points.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-square-up-right"></i>
+                    </div>
+                    <h3>YouPiP</h3>
+                    <p>Enhanced Picture-in-Picture functionality with more controls and options.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>YouQuality</h3>
+                    <p>Force specific video quality settings and override YouTube's auto-quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>YouTimeStamp</h3>
+                    <p>Save and jump to specific timestamps in videos with custom bookmarking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-forward"></i>
+                    </div>
+                    <h3>iSponsorBlock</h3>
+                    <p>Automatically skip sponsored segments, intros, and outros in videos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heading"></i>
+                    </div>
+                    <h3>YouTube Header</h3>
+                    <p>Customize the YouTube header and navigation bar with different styles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Themes</h3>
+                    <p>Choose from multiple themes including true black AMOLED mode.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Speed Control</h3>
+                    <p>Adjust playback speed beyond YouTube's default limitations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source Tweaks</h3>
+                    <p>All modifications are based on trusted open-source projects from GitHub.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="installation" id="installation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Installation Guide</h2>
+                <p>Follow these steps to install YouFlex on your iOS device</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download the IPA file</h3>
+                        <p>Click the download button above to get the YouFlex IPA file. Save it to your device or computer.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Install using sideloading tool</h3>
+                        <p>Use one of these methods to install the IPA:</p>
+                        <ul style="color: var(--gray); font-size: 14px; margin: 10px 0; padding-left: 20px;">
+                            <li><strong>AltStore</strong> (Recommended) - Install via computer</li>
+                            <li><strong>Sideloadly</strong> - Easy Windows/Mac tool</li>
+                            <li><strong>TrollStore</strong> - Permanent signing (if available)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Trust the developer</h3>
+                        <p>After installation, go to <strong>Settings → General → VPN & Device Management</strong> and trust the developer certificate.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Open YouFlex</h3>
+                        <p>Launch the app and enjoy your enhanced YouTube experience with all 20+ tweaks!</p>
+                        <div class="warning-box">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Important Notice</h4>
+                            <p>YouFlex is a modified application and may require re-signing every 7 days with a free Apple Developer account, or 1 year with a paid developer account.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about YouFlex installation and usage</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is YouFlex safe to use?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, YouFlex is safe and only modifies the YouTube app to enable additional features. All tweaks are based on open-source projects from trusted developers. We don't collect any personal data.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Why do I need to reinstall every 7 days?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        This is an Apple limitation for sideloaded apps with free developer accounts. Paid developer accounts can sign for 1 year. TrollStore users can install permanently if available for their iOS version.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use my YouTube account?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, you can log in with your Google account normally. All your subscriptions and history will sync. The tweaks work alongside your regular account.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Will I get banned from YouTube?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        There is very low risk of account bans as these modifications are client-side only. However, we cannot guarantee 100% safety as it violates YouTube's Terms of Service.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Does it work on iPad?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, YouFlex works on both iPhone and iPad devices running iOS 14.0 or later. All features are optimized for both device types.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How often is YouFlex updated?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We regularly update YouFlex to include the latest tweaks and maintain compatibility with new YouTube versions. Follow our GitHub for update notifications.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="https://i.imgur.com/RVmKYjl.png" alt="YouFlex" style="width: 24px; height: 24px;">
+                    <span>YouFlex</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>YouFlex is not affiliated with YouTube or Google. This is an independent project.</p>
+                <p>YouTube is a trademark of Google LLC. All tweaks are based on open-source projects.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                
+                // Open clicked answer if it wasn't active
+                if (!isActive) {
+                    answer.classList.add('active');
+                }
+            });
+        });
+
+        // Download button functionality
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            // In a real scenario, this would trigger the download
+            alert('YouFlex IPA download starting...\n\nIf download does not start, check your browser settings or try right-clicking and "Save link as".');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
